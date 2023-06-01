@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="97dp"
+        android:layout_height="94dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="333dp"
+        android:layout_marginTop="-5dp"
+        app:srcCompat="@drawable/diet_routine"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/dietRoutine"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="82dp"
+        android:text="DIET ROUTINE"
+        android:textColor="#000000"
+        android:textSize="32sp"
+        android:typeface="serif"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtView1"
+        android:layout_width="308dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="408dp"
+        android:layout_marginBottom="400dp"
+        android:text="MAKE AN INFORMED DECISION ABOUT YOUR DIET AND HEALTH."
+        android:textColor="#FFF623"
+        android:textSize="24sp"
+        tools:ignore="TextSizeCheck" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="292dp"
+        android:layout_height="293dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="642dp"
+        android:text="Take an account on :\n - individual medical history\n -  current health status\n - dietary preference\nGenerates:\n - tailored meal plan\n -recommended dietary\n  "
+        android:textColor="#D9D9D9"
+        android:textSize="20sp"
+        tools:ignore="TextSizeCheck"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="851dp"
+        android:fillColor="#1E70D1"
+        android:text="START ASSESMENT" />
+
+
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
