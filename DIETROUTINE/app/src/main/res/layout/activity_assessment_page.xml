@@ -4,19 +4,257 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6BCE69"
     tools:context=".Assessment_page">
+
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:id="@+id/textView2"
+        android:id="@+id/relativeLayout"
+        android:layout_width="397dp"
+        android:layout_height="377dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#A39A9A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193">
+
+
+        <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="870dp"
+            android:fillViewport="true">
 
-            android:text="HELLO WORLD"
-            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/personal_details"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="top"
+                    android:text="@string/personal_details"
+                    android:textAppearance="@style/personal_details" />
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="name"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/age"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/gender"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Gender"
+                    android:inputType="text"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:minHeight="48dp" />
+
+                <TextView
+                    android:id="@+id/health_status"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="top"
+                    android:text="@string/health_status"
+                    android:textAppearance="@style/health_status" />
+
+                <EditText
+                    android:id="@+id/medic_hist"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Medical History"
+                    android:inputType="textLongMessage"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/current_health"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Current Health Status"
+                    android:inputType="textLongMessage"
+                    android:minHeight="48dp" />
+
+                <EditText
+                    android:id="@+id/dietary_restrict"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Dietary Restriction"
+                    android:inputType="textLongMessage" />
+
+                <EditText
+                    android:id="@+id/allergy"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Allergies"
+                    android:inputType="textLongMessage" />
+
+                <TextView
+                    android:id="@+id/dietary_preference"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="0dp"
+                    android:gravity="top"
+                    android:text="@string/dietary_prefe"
+                    android:textAppearance="@style/dietary_prefe" />
+
+                <EditText
+                    android:id="@+id/food"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Food Choice"
+                    android:inputType="textLongMessage" />
+
+                <EditText
+                    android:id="@+id/Culture"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Culture"
+                    android:inputType="textLongMessage" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
     </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="388dp"
+        android:layout_height="167dp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#A39A9A">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                <TextView
+            android:id="@+id/additional_info"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:gravity="top"
+            android:text="@string/additional_info"
+            android:textAppearance="@style/additional_info" />
+
+            <EditText
+                android:id="@+id/symptoms"
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:textColor="#000000"
+                android:hint="Provide Symptoms"
+                android:inputType="textLongMessage"
+                android:minHeight="48dp" />
+                <EditText
+                    android:id="@+id/goals"
+                    android:layout_width="380dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textColor="#000000"
+                    android:hint="Capture Your Goals"
+                    android:inputType="textLongMessage"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/diet_routin"
+        android:layout_width="97dp"
+        android:layout_height="94dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="-24dp"
+        android:background="@drawable/diet_routine"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/get_recom"
+        android:layout_width="195dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="top"
+        android:text="@string/Get_recommendation"
+        android:textAppearance="@style/Get_recommendation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.96"
+        tools:ignore="RtlHardcoded" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillColor="#1E70D1"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toTopOf="@+id/get_recom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

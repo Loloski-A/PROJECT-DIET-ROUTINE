@@ -13,6 +13,9 @@
         android:theme="@style/Theme.DIETROUTINE"
         tools:targetApi="31">
         <activity
+            android:name=".Result_page"
+            android:exported="false" />
+        <activity
             android:name=".Assessment_page"
             android:exported="true" />
         <activity
