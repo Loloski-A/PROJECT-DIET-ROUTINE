@@ -10,5 +10,13 @@
     <string name="health_status">Health status:</string>
     <string name="dietary_prefe">Dietary preference:</string>
     <string name="additional_info">Additional info:</string>
+    <string name="your_person">Your personalized meal plan</string>
+    <string name="detailed">SAVE</string>
+    <string name="remember_ta"><b>REMEMBER:</b>\nTake water at least not that 3 liters per day.\nFruits are to be taken in between meals if you can afford</string>
+    <string name="breakfast">breakfast</string>
+    <string name="lunch">Lunch</string>
+    <string name="dinner">dinner</string>
+
+
 
 </resources>

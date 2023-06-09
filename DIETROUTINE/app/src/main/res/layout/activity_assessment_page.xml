@@ -44,24 +44,15 @@
                     android:textAppearance="@style/personal_details" />
 
                 <EditText
-                    android:id="@+id/name"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:textColor="#000000"
-                    android:hint="name"
-                    android:inputType="text"
-                    android:minHeight="48dp" />
-
-                <EditText
                     android:id="@+id/age"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:textColor="#000000"
                     android:hint="Age"
                     android:inputType="number"
-                    android:minHeight="48dp" />
+                    android:minHeight="48dp"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
 
                 <EditText
                     android:id="@+id/gender"
@@ -73,16 +64,6 @@
                     android:inputType="text"
                     android:minHeight="48dp" />
 
-                <EditText
-                    android:id="@+id/phone"
-                    android:layout_width="200dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:textColor="#000000"
-                    android:hint="Phone"
-                    android:inputType="phone"
-                    android:minHeight="48dp" />
-
                 <TextView
                     android:id="@+id/health_status"
                     android:layout_width="200dp"
@@ -92,16 +73,6 @@
                     android:gravity="top"
                     android:text="@string/health_status"
                     android:textAppearance="@style/health_status" />
-
-                <EditText
-                    android:id="@+id/medic_hist"
-                    android:layout_width="380dp"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:textColor="#000000"
-                    android:hint="Medical History"
-                    android:inputType="textLongMessage"
-                    android:minHeight="48dp" />
 
                 <EditText
                     android:id="@+id/current_health"
@@ -118,18 +89,20 @@
                     android:layout_width="380dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:textColor="#000000"
                     android:hint="Dietary Restriction"
-                    android:inputType="textLongMessage" />
+                    android:inputType="textLongMessage"
+                    android:minHeight="48dp"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/allergy"
                     android:layout_width="380dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:textColor="#000000"
                     android:hint="Allergies"
-                    android:inputType="textLongMessage" />
+                    android:inputType="textLongMessage"
+                    android:minHeight="48dp"
+                    android:textColor="#000000" />
 
                 <TextView
                     android:id="@+id/dietary_preference"
@@ -146,9 +119,10 @@
                     android:layout_width="380dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:textColor="#000000"
                     android:hint="Food Choice"
-                    android:inputType="textLongMessage" />
+                    android:inputType="textLongMessage"
+                    android:minHeight="48dp"
+                    android:textColor="#000000" />
 
                 <EditText
                     android:id="@+id/Culture"
@@ -232,9 +206,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
+        android:fontFamily="@font/scada_bold"
         android:gravity="top"
         android:text="@string/Get_recommendation"
         android:textAppearance="@style/Get_recommendation"
+        android:textSize="17dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

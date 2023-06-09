@@ -6,9 +6,9 @@ import android.os.Bundle;
 
 public class Result_page extends AppCompatActivity {
 
-    @Override
+   @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_result_page);
-    }
+       super.onCreate(savedInstanceState);
+       setContentView(R.layout.activity_result_page);
+   }
 }

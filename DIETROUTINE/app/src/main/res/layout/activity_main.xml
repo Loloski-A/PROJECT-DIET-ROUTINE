@@ -30,9 +30,9 @@
         android:layout_alignParentTop="true"
         android:layout_marginStart="100dp"
         android:layout_marginTop="82dp"
+        android:fontFamily="@font/asap_bold"
         android:text="@string/diet_routine"
         android:textAppearance="@style/diet_routine"
-        android:typeface="serif"
         tools:ignore="TextSizeCheck" />
 
     <TextView
@@ -45,6 +45,7 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="408dp"
         android:layout_marginBottom="400dp"
+        android:fontFamily="@font/baloo_thambi"
         android:text="@string/informed_decision"
         android:textAppearance="@style/informed_decision"
         tools:ignore="TextSizeCheck" />
@@ -58,6 +59,7 @@
         android:layout_marginStart="130dp"
         android:layout_alignParentTop="true"
         android:layout_marginTop="642dp"
+        android:fontFamily="@font/asap_bold"
         android:text="@string/take_account"
         android:textAppearance="@style/take_account"
         tools:ignore="TextSizeCheck"/>
